@@ -1,0 +1,68 @@
+* {
+  border-radius: 0 !important;
+color: black;
+}
+body {
+    padding-top: 70px;
+}
+
+.jumbotron{
+    color: #2c3e50;
+    background: #ecf0f1;
+    position: absolute;
+    
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.bottom-left {
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    color:white;
+}
+.bottom-left h1{
+    
+}
+
+iconImages {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-inverse{
+    background: #f2c811;
+    border: none;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: black;
+}
+
+.navbar-inverse .navbar-brand{
+    color: black;
+}
+
+#dropdownBasis {
+    width: 99%;
+    text-align: left;
+    background: #f2c811;
+    margin-top: 1%;
+}
+
+#dropdownUdvidetSalg {
+    margin-top: 1%;
+    width: 99%;
+    text-align: left;
+    background: #0072c6;
+}
+
+#dropdownUdvidetProduktion {
+    margin-top: 1%;
+    width: 99%;
+    text-align: left;
+    background: #008541;
+}
