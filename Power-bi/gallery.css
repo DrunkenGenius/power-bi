@@ -12,11 +12,11 @@ body {
     position: absolute;
     
 }
-.container {
+/*.container {
     position: relative;
     text-align: center;
     color: white;
-}
+}*/
 .bottom-left {
     position: absolute;
     top: 2%;
@@ -25,6 +25,18 @@ body {
 }
 .bottom-left h1{
     
+}
+.grey {
+    background-color: #f6f6f6;
+}
+.orange{
+    background-color: #FFE46D;
+}
+.top-buffer { 
+    margin-top:20px; 
+}
+.bot-buffer{
+    margin-bottom:20px;
 }
 
 iconImages {
