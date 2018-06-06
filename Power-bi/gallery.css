@@ -76,9 +76,12 @@ iconImages {
     margin-top: 1%;
     width: 99%;
     text-align: left;
-    background: #008541;
+    background: #002050;
 }
 
+.main-text{
+    margin-top: 5
+}
 
 .button22 {
 	color: rgba(255,255,255,1);
@@ -91,7 +94,7 @@ iconImages {
 	overflow: hidden;
 }
 .button22 a{
-	color: rgba(51,51,51,1);
+	color: rgba(255,255,255,1);
 	text-decoration: none;
 	display: block;
 }
