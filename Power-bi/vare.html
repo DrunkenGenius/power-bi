@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NP Odense - Power-BI</title>
+
+    <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+
+    <!--<link rel="stylesheet" type="text/css" href="gallery.css">-->
+    <script type="text/javascript" link="js.js"></script>
+    <style>
+        .fixed {
+            position: fixed;
+            top: 2%;
+            left: 1.5%;
+        }
+
+    </style>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+<div>
+     <a href="PowerBi2.html" class="button fixed "><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Tilbage </a>
+    <a class="iframe" href="udvidetSalg" id="udvidetSalg">
+                    <iframe width="100%" height="763" src="https://app.powerbi.com/view?r=eyJrIjoiYTVlMWNjZTMtMDkwOS00NDdlLTgyMDQtYTVkNjFiNTI1M2I0IiwidCI6IjU2YmVhYTJlLTFjNTUtNDljYy1iNTVjLTNkMjhkODk5ZmZkZSIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe></a>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script>
+    $(document).ready(function() {
+        $("iframe").height(window.innerHeight);
+    });
+
+</script>
+<script>
+    $(document).ready(function() {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - $(this).height() * 3
+                }, 900, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    })
+
+</script>
+
+</html>

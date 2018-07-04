@@ -9,191 +9,139 @@
     <link rel="stylesheet" type="text/css" href="gallery.css">
 
     <script type="text/javascript" link="js.js"></script>
+    <style>
+        .center-picture {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+    </style>
 
 
 
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="navbar navbar-inverse navbar-fixed-top powerBiColor">
-        <div class="container">
-            <div class="navbar-header">
-
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-collapse-demo" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-                
-      </button>
-
-
-                <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>Power-Bi</a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-collapse-demo">
-                <ul class="nav navbar-nav">
-                    <li><a href="#omOs">Om Os</a></li>
-                    <li><a href="#losninger">Løsninger</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
-                </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-
-                </ul>
-
-            </div>
-        </div>
-    </nav>
-
-    <div class="container">
-        <div class="row bot-buffer">
-            <div class="col-sm-12">
-                <img src="analyst.jpg" alt="Analytics Image" style="width:100%">
-                <div class="bottom-left">
-                    <h1>Få mere ud af dit Navision!</h1>
-                    <h3 class="main-text">Effektiv, gennemsigtigt og interaktive<br>visualisering af din organisations data.</h3>
-                </div>
-            </div>
+  <nav class="navbar navbar-default">
+    <!--<div class="container-fluid">-->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="VD_logo.png" alt="Dispute Bills">
+        </a>
+      </div>
+      <div id="navbar1" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+ <!--   </div>-->
+    <!--/.container-fluid -->
+</nav>
+    
+    <div class="col-sm-12" id="headerImg">
+        <img src="analyst.jpg" alt="Analytics Image" style="width:100%" >
+        <div class="bottom-left">
+            <h1>Få mere ud af dit Navision!</h1>
+            <h3 class="main-text">Effektiv, gennemsigtigt og interaktiv visualisering <br>af din organisations data.</h3>
         </div>
     </div>
+    
+    <div class="col-sm-12 content">
+    
+    <div class="col-sm-12 " id="omOs">
 
-
-
-
-    <div class="col-sm-12 grey" id="omOs">
-        <div class="container top-buffer bot-buffer">
-            <div class="row text-left">
-                <div class="col-sm-4">
-                    <img src="Microsoft-Dynamics-logo.png" width="20%" height="20%" class="iconImages">
-                </div>
-                <div class="col-sm-4">
-                    <img src="power-bi-logo.png" width="20%" height="20%" class="iconImages">
-                </div>
-                <div class="col-sm-4">
-                    <img src="Visualization-logo.png" width="20%" height="20%" class="iconImages">
-                </div>
-            </div>
-            <div class="row">
-
-                <div class="col-sm-4">
-
-                    <h3> Microsoft Dynamics NAVISION </h3>
-                    <p> MBut I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
-                </div>
-                <div class="col-sm-4">
-
-                    <h3>Power BI</h3>
-                    <p>Microsofts nyeste skud på stammen indenfor Business Intelligence. Power BI giver mulighed for at visualisere store mængder data i et flydende interaktivt interface, hvor rapporter tilgås både fra computer, tablet samt mobil.</p>
-                </div>
-                <div class="col-sm-4">
-
-                    <h3>Visualisering</h3>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="col-sm-12" id="losninger">
-        <div class="container bot-buffer">
-            <div class="row bot-buffer">
-                <div class="col-sm-12 col-lg-12 text-center">
-                    <h1>Løsninger</h1>
-                    <h3>Se og prøv vores forskellige Cronus rapporter i vores interaktive demoer!</h3>
-                </div>
-                <div class="col-sm-12 col-lg-4 ">
-                    <button class="btn btn-secondary embedded button22" type="button" id="dropdownBasis" value="basis">Basis</button>
-                </div>
-                <div class="col-sm-12 col-lg-4 ">
-                    <button class="btn btn-secondary embedded button22" type="button" id="dropdownUdvidetSalg" value="udvidetSalg">Udvidet Salg</button>
-                </div>
-                <div class="col-sm-12 col-lg-4 ">
-                    <button class="btn btn-secondary embedded button22" type="button" id="dropdownUdvidetProduktion" value="udvidetProduktion">Udvidet Produktion</button>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-12 basis">
-                    <!--  Basis Button og Embed-->
-                    <a class="iframe" href="basis" id="basis">
-                    <iframe width="100%" height="696" src="https://app.powerbi.com/view?r=eyJrIjoiNjNkZDgzZmEtODM4YS00ZDdjLTgwNGItMzE5ZDUwNDc4OTcxIiwidCI6IjU2YmVhYTJlLTFjNTUtNDljYy1iNTVjLTNkMjhkODk5ZmZkZSIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
-                        </a>
-                    <!--<iframe width="98%" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiY2QwMTk2NmQtZGU4NS00NzhlLWE4M2YtZWYzYjUzMGU5N2RhIiwidCI6IjlhOTdjMjdkLWI4M2UtNDY5NC1iMzUzLTU0YmRiZjE4YWI1YiIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>-->
-                </div>
-
-                <div class="col-sm-12 udvidetSalg">
-                    <!--Udvidet Button og Embed-->
-                    <a class="iframe" href="udvidetSalg" id="udvidetSalg">
-                    <iframe width="100%" height="696" src="https://app.powerbi.com/view?r=eyJrIjoiNzI2ZDBlYTEtYjNlMi00NGU3LWE3NDAtOTFhMmIyYWI5NTZjIiwidCI6IjU2YmVhYTJlLTFjNTUtNDljYy1iNTVjLTNkMjhkODk5ZmZkZSIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe></a>
-                    <!--<iframe width="98%" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiY2QwMTk2NmQtZGU4NS00NzhlLWE4M2YtZWYzYjUzMGU5N2RhIiwidCI6IjlhOTdjMjdkLWI4M2UtNDY5NC1iMzUzLTU0YmRiZjE4YWI1YiIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>-->
-                </div>
-
-                <div class="col-sm-12 udvidetProduktion ">
-                    <a class="iframe" href="udvidetProduktion" id="udvidetProduktion"><iframe width="98%" height="696" src="https://app.powerbi.com/view?r=eyJrIjoiY2QwMTk2NmQtZGU4NS00NzhlLWE4M2YtZWYzYjUzMGU5N2RhIiwidCI6IjlhOTdjMjdkLWI4M2UtNDY5NC1iMzUzLTU0YmRiZjE4YWI1YiIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <div class="col-sm-12">
-        <div class="container">
-            <div class="row">
-
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="col-sm-12 grey " id="kontakt">
-        <div class="container ">
-            <h2 class="text-center">Kontakt</h2>
-
-            <div class="col-sm-12">
+        <div class="row">
+            <div>
+            <div class="col-sm-5">
                 <div class="row">
-                    <form id="contact-form" method="post" action="contact.php" role="form">
-                        <div class="col-sm-12">
-                            <h4 class="text-center">Kontakt os og vi vender tilbage hurtigst muligt med en god løsning og et godt tilbud.</h4>
-                            <div class="row">
-                                <div class="col-sm-6 form-group">
-                                    <input class="form-control" id="navn" name="navn" placeholder="Navn" type="text" required="required" data-error="FName is required.">
-                                    <!--<div class="help-block with-errors"></div>-->
-                                </div>
-                                <div class="col-sm-6 form-group">
-                                    <input class="form-control" id="firma" name="firma" placeholder="Firma navn" type="text" required>
-                                    <!--<div class="help-block with-errors"></div>-->
-                                </div>
-                                <div class="col-sm-6 form-group">
-                                    <input class="form-control" id="nummer" name="nummer" placeholder="Telefonnummer" type="tel" required>
-                                    <!--<div class="help-block with-errors"></div>-->
-                                </div>
-                                <div class="col-sm-6 form-group">
-                                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required="required" data-error="Valid email is required.">
-                                    <!--<div class="help-block with-errors"></div>-->
-                                </div>
+                    <h3> Ved du hvilke af dine kunder der er på vej til at forlade dig? </h3>
+                    Se hvordan Visuel data kan hjælp dig med at skabe overblik over dine kunder</div>
+               </div>
+
+
+            </div>
+                
+                <div class="col-sm-1"></div>
+            <div class="col-sm-5">
+                <div class="row">
+                    <h3>Ved du hvilke varer du tjener mest på?</h3>
+                    Se hvordan Visuel data kan hjælp dig med at skabe overblik over dine varer</div>
+                </div>
+            </div>
+    </div>
+    
+    
+    <div class="col-sm-12 " id="omOs">
+
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="row"> <a href="kunde.html" class="button "><span class="">Klik her!</span></a></div>
+
+
+            </div>
+                <div class="col-sm-1"></div>
+            <div class="col-sm-5">
+                    <div class="align-bottom"><a href="vare.html" class="button"><span class="text-right">Klik her!</span></a></div>
+
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+    
+<div class="col-sm-12 grey content" id="kontakt">
+        <!-- <div class="container ">-->
+        <h2 class="text-center">Kontakt</h2>
+
+        <div class="col-sm-12">
+            <div class="row">
+                <form id="contact-form" method="post" action="contact.php" role="form">
+                    <div class="col-sm-12">
+                        <h4 class="text-center">Kontakt os og vi vender tilbage hurtigst muligt med en god løsning og et godt tilbud.</h4>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="navn" name="navn" placeholder="Navn" type="text" required="required" data-error="FName is required.">
+                                <!--<div class="help-block with-errors"></div>-->
                             </div>
-                            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-                            <div class="row">
-                                <div class="col-sm-12 form-group">
-                                    <button class="btn btn-default pull-right" type="submit">Send forespørgsel</button>
-                                </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="firma" name="firma" placeholder="Firma navn" type="text" required>
+                                <!--<div class="help-block with-errors"></div>-->
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="nummer" name="nummer" placeholder="Telefonnummer" type="tel" required>
+                                <!--<div class="help-block with-errors"></div>-->
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required="required" data-error="Valid email is required.">
+                                <!--<div class="help-block with-errors"></div>-->
                             </div>
                         </div>
-                    </form>
-                </div>
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button class="btn btn-default pull-right" type="submit">Send forespørgsel</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
+        <!-- </div>-->
     </div>
 
 
     <div class="col-sm-12">
-        <div class="container top-buffer">
+        <div class="content">
             <div class="row">
                 <div class="col-sm-12">
                     <p><span class="glyphicon glyphicon-map-marker"></span> Cortex Park 26, 5230 Odense M</p>
@@ -219,7 +167,8 @@
 
         //Hides SoMe Icons
 
-        $("#basis").hide();
+        /*$("#basis").hide();*/
+        $("#basisIframe").contents().find(".logoBar").hide();
         $("#udvidetSalg").hide();
         $("#udvidetProduktion").hide();
 
@@ -265,6 +214,7 @@
 
 
     });
+
 </script>
 <script>
     $(document).ready(function() {
@@ -292,6 +242,7 @@
             } // End if
         });
     })
+
 </script>
 
 </html>

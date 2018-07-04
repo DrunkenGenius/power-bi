@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NP Odense - Power-BI</title>
+
+    <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+
+    <!--<link rel="stylesheet" type="text/css" href="gallery.css">-->
+    <script type="text/javascript" link="js.js"></script>
+    <style>
+        .fixed {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+        }
+
+    </style>
+
+
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+    <!--<nav class="navbar navbar-inverse navbar-fixed-top powerBiColor">
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-collapse-demo" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+                
+      </button>
+
+
+            <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>Power-Bi</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-collapse-demo">
+            <ul class="nav navbar-nav">
+                <li><a href="PowerBi2.html">Tilbage</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+
+            </ul>
+
+        </div>
+    </nav>-->
+    <div>
+        <a href="PowerBi2.html" class="button fixed"><span class="text-right">Tilbage</span></a>
+
+        <a class="iframe" href="basis" id="basis">
+                    <iframe width="100%" height="763px" src="https://app.powerbi.com/view?r=eyJrIjoiNzY5ZmRiM2EtMDBkOC00YjQ3LThlMWItMmU2OTRlNmQ0Y2U3IiwidCI6IjU2YmVhYTJlLTFjNTUtNDljYy1iNTVjLTNkMjhkODk5ZmZkZSIsImMiOjh9" frameborder="0" allowFullScreen="true" id="basisIframe"></iframe>
+    </a>
+
+    </div>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script>
+    $(document).ready(function() {
+        $("iframe").height(window.innerHeight);
+        $("#basis").height(0);
+    });
+
+</script>
+<script>
+    $(document).ready(function() {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - $(this).height() * 3
+                }, 900, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    })
+
+</script>
+
+</html>
