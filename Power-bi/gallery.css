@@ -11,8 +11,14 @@ body {
     padding: 60px 80px 60px 80px;
 }
 
+
+
 .contentSides {
     padding: 0px 80px 0px 80px;
+}
+
+.navbar-default{
+   border:none;
 }
 .button {
     background-color: #748D98;
@@ -44,13 +50,15 @@ body {
     color: white;
 }*/
 
-.bottom-left {
-    position: absolute;
-    top: 2%;
-    left: 4%;
+.imgText {
     color: white;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 #headerImg{
+    margin-top: -20px;
     padding-left: 0px;
     padding-right: 0px;
 }
@@ -89,27 +97,6 @@ iconImages {
 
 .navbar-inverse .navbar-brand {
     color: black;
-}
-
-#dropdownBasis {
-    width: 99%;
-    text-align: left;
-    background: #f2c811;
-    margin-top: 1%;
-}
-
-#dropdownUdvidetSalg {
-    margin-top: 1%;
-    width: 99%;
-    text-align: left;
-    background: #0072c6;
-}
-
-#dropdownUdvidetProduktion {
-    margin-top: 1%;
-    width: 99%;
-    text-align: left;
-    background: #002050;
 }
 
 .main-text {
