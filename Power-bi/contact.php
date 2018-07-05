@@ -7,7 +7,7 @@
 $from = 'Forespørgsel <demo@domain.com>';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'powerbi@npodense.dk';
+$sendTo = 'support@visueldata.dk';
 
 // subject of the email
 $subject = 'Ny forespørgsel fra';
